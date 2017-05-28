@@ -1,0 +1,59 @@
+table {
+    border-collapse: separate;
+    border-spacing: 0;
+    color: #4a4a4d;
+    font: 14px/1.4 "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin: 0 auto;
+    width: 100%;
+}
+
+th,
+td {
+    border-bottom: 1px solid #cecfd5;
+    border-left: 1px solid #cecfd5;
+    line-height: 30px;
+}
+
+thead {
+    background: #395870;
+    color: #fff;
+}
+
+th {
+    font-weight: bold;
+    text-align: center;
+}
+
+th:first-child {
+    border-left: 0 solid #cecfd5;
+}
+
+tbody tr:nth-child(even) {
+    background: #e0e0e0;
+}
+
+td:first-child {
+}
+
+.book-title {
+    color: #395870;
+    display: block;
+}
+
+.item {
+    padding: 0 5px;
+    text-align: left;
+}
+
+.item-center {
+    text-align: center;
+}
+
+.icon-delete {
+    color: #fa6900;
+
+}
+
+.icon-delete:hover {
+    color: #d43f3a;
+}
