@@ -26,20 +26,7 @@
 
 <body>
 <div class="wrapper" id="wrapper">
-    <g:render template='/layouts/sidebar'/>
-    <!--sidebar-wrapper-->
-    <div class="page-content-wrapper">
-        <g:render template='/layouts/header'/>
-        <ol class="bradcrumb-menu">DashBoard</ol>
-
-        <div class="content-wrapper">
-            <div class="content-wrapper-content">
-                <div id="user_list">
-                    <g:render template="userList" model="[userList: userList]"/>
-                </div>
-            </div>
-        </div>
-    </div>
+    Welcome <strong>${user}</strong>, If you want to logout: <g:remoteLink class="logout" controller="logout" method="post" asynchronous="false" onSuccess="location.reload()">Logout</g:remoteLink>
 </div>
 <!--body-wrapper-->
 </body>

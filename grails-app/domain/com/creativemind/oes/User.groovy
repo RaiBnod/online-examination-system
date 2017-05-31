@@ -1,18 +1,12 @@
 package com.creativemind.oes
 
-class User {
-    String userName
-    String password
-    String userRole;
-    UserEducation userEducation
+class User extends SecUser {
     UserDemographics userDemographics
     UserAddress userAddress
+    UserEducation userEducation
     static constraints = {
-        userRole inList: ["admin","user"]
-        userRole(nullable: false)
-        userName(nullable: false)
-        password(nullable: false)
+
     }
-    static embedded = ['userAddress','userDemographics', 'userEducation']
-    static hasMany = [results:Results]
+    static embedded = ['userDemographics', 'userAddress', 'userEducation']
+    static hasMany = [results: Results]
 }
