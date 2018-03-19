@@ -1,0 +1,62 @@
+.main-menu-wrapper {
+    float: right;
+}
+
+.module {
+    background: transparent;
+    border-radius: 3px;
+    width: 100px;
+    height: 50px;
+    float: left;
+    margin: 5px;
+}
+
+.module a {
+    display: block;
+    text-decoration: none;
+    border-radius: 3px;
+    border: 1px solid #ffffff;
+    transition: .3s;
+}
+
+.module a:hover {
+    border: 1px solid #f0ad4e;
+}
+
+.module-icon i {
+    font-size: 24px;
+    color: #ffffff;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    line-height: 32px;
+    transition: .3s;
+}
+
+.module a:hover .module-icon i {
+    font-size: 22px;
+    color: #f0ad4e;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    line-height: 32px;
+}
+
+.module-text {
+    font-size: 12px;
+    text-align: center;
+    line-height: 16px;
+    font-weight: bold;
+    color: #ffffff;
+    font-family: "Times New Roman", Times, serif;
+    transition: .3s;
+}
+
+.module a:hover .module-text {
+    font-size: 11px;
+    color: #f0ad4e;
+    text-align: center;
+    line-height: 16px;
+    font-weight: bold;
+    font-family: "Times New Roman", Times, serif;
+}

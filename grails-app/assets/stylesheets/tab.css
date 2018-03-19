@@ -1,0 +1,95 @@
+/* Style the list */
+ul.tab {
+    list-style-type: none;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+    height: calc(100% - 2px); /*border for minus 2*/
+    text-align: center;
+}
+
+/* Float the list items side by side */
+ul.tab li {
+    margin: 0 auto;
+    width: 60%;
+    display: inline;
+}
+
+/* Style the links inside the list items */
+ul.tab li a {
+    line-height: 20px;
+    width: 150px;
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 15px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Change background color of links on hover */
+ul.tab li a:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+ul.tab li a:focus, .active {
+    background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+    height: calc(100% - 50px); /*minus height of <li></li>*/
+    display: none;
+    background: #ffffff;
+}
+
+.tabcontent-content {
+    height: 100%;
+    padding: 20px;
+    overflow: scroll;
+}
+
+.center {
+    margin: 0 auto;
+}
+
+.main-content {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.col-md-4 {
+    padding: 0 20px 0 0 !important;
+}
+
+.col-md-6 {
+    padding: 0 20px 0 0 !important;
+}
+
+.colorgraph {
+    margin: 20px 20px 20px 0 !important;
+}
+
+@-webkit-keyframes fadeEffect {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeEffect {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.clear {
+    clear: both;
+}

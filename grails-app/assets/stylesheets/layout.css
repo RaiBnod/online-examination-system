@@ -1,0 +1,87 @@
+@charset "utf-8";
+html,
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    height: 100%;
+    overflow: hidden; /*When bootstrap imported as css it was giving problem*/
+}
+
+.wrapper {
+    height: 100%;
+    width: 100%;
+}
+
+/*=====================================For Animation===========================================*/
+.sidebar-wrapper {
+    width: 220px;
+    height: 100%;
+    background-color: #253646;
+    float: left;
+}
+
+.page-content-wrapper {
+    padding-left: 220px;
+    height: 100%;
+}
+
+.wrapper.active .sidebar-wrapper {
+    transition: all .4s ease 0s;
+    width: 60px;
+}
+
+.wrapper.active .sidebar-wrapper li span {
+    display: none;
+}
+
+.wrapper.active .page-content-wrapper {
+    padding-left: 60px;
+    transition: all .4s ease 0s;
+}
+
+/*==============================================================================================*/
+.header {
+    background-color: #2E3F4F;
+    height: 60px;
+}
+
+.bradcrumb-menu {
+    line-height: 20px;
+    background-color: #e0e0e0;
+    margin: 0;
+    padding: 5px;
+}
+
+.content-wrapper {
+    height: calc(100% - (60px + 30px)); /*100% - (header + breadcumb + border 1px)*/
+    background: #ffffff;
+    overflow-y: auto;
+}
+
+.content-wrapper-content {
+    height: calc(100% - 60px); /*100% - (header + breadcumb + border 1px)*/
+    background: #ffffff;
+    overflow-y: auto;
+}
+
+.content-wrapper-tailer {
+    height: 60px; /*100% - (header + breadcumb + border 1px)*/
+    overflow-y: auto;
+    float: right;
+    padding: 15px;
+}
+
+.content-wrapper-tailer button {
+    width: 20px;
+    height: 20px;
+    margin: 5px 0 0 5px;
+    background: #253646;
+    border: 0;
+    color: #ffffff;
+    padding: 0;
+}
+
+.content-wrapper-tailer form {
+
+}
